@@ -15,7 +15,7 @@ def bell_state(kind="phi+"):
     """phi+ = (|00>+|11>)/sqrt2, psi+ = (|01>+|10>)/sqrt2."""
     qc = QuantumCircuit(2)
     if kind == "psi+":
-        qc.x(0)
+        qc.x(1)
     qc.h(0)
     qc.cx(0, 1)
     return qc
